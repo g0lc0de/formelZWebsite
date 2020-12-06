@@ -1,0 +1,121 @@
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background: #212529;
+    height: 80px;
+}
+
+footer div {
+    height: 100%;
+}
+
+.fact {
+    font-size: 20px;
+}
+
+.fact circle {
+    stroke: #54B4A8;
+}
+
+#navbar {
+    min-height: 80px;
+}
+
+#titleSection {
+    position: relative;
+    height: 300px;
+    z-index: 1;
+}
+
+#side-nav {
+    display: none;
+    width: 200px;
+    left: calc(50% + 570px); /* Max container/content width 1140px */
+    top: 0px;
+}
+
+#background {
+    top: 96px;
+    z-index: -1;
+    width: 100%;
+    height: calc(100% - 96px);
+}
+
+#background img {
+    width: 100%;
+}
+
+#green-gradient {
+    position: absolute;
+    background: linear-gradient(to bottom, #276e2900,#1C521EFF 200px, #1C521EFF 100%);
+    top: 36vw;
+    height: 800px;
+    left: 0px;
+    right: 0px;
+}
+
+#blue-gradient {
+    position: absolute;
+    background: linear-gradient(to bottom, #1C521EFF,#132B64FF 250px, #132B64FF 100%);
+    top: calc(36vw + 800px);
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+#navbarSupportedContent a {
+    border-right: 1px solid rgba(219, 219, 219, 0.589);
+}
+
+#titleSection h1 {
+    height: 300px;
+    line-height: 300px;
+    font-size: calc(20px + 4vw);
+    text-shadow: 0px 3px 6px #555555AA;
+}
+
+#titleSection h1::before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(#858585bd,#9C9C9C00);
+    z-index: -1;
+}
+
+#navbar .navbar-toggle {
+    margin-top: 23px !important;
+}
+
+#navbarSupportedContent a, #navbar a img{
+    color: var(--dark);
+    background: var(--white);
+    height: 80px;
+    width: auto;
+    line-height: 80px;
+}
+
+#navbarSupportedContent li.active a, #navbarSupportedContent a:hover {
+    color: var(--white);
+    background: var(--dark);
+}
+
+#side-nav a.list-group-item.active {
+    background: #54B4A8;
+    border: 0px;
+}
+
+@media (min-width: 1570px) {
+    #side-nav {
+        display: block;
+    }
+}

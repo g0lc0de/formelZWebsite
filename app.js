@@ -14,6 +14,10 @@ app.get("/", (req,res) => {
     res.render("Informationen.ejs")
 });
 
+app.get("*", (req,res) => {
+    res.redirect("/")
+});
+
 app.listen(port, () => {
     console.log(`App listening now on port ${port}`);
 });
