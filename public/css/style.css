@@ -18,7 +18,7 @@ footer div {
 }
 
 .fact {
-    font-size: 20px;
+    font-size: clamp(16px,calc(4px + 1.2vw),20px);
 }
 
 .fact circle {
